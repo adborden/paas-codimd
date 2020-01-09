@@ -33,14 +33,6 @@
             "addDisqus": true,
             "addGoogleAnalytics": true
         },
-        "db": {
-            "username": "",
-            "password": "",
-            "database": "codimd",
-            "host": "localhost",
-            "port": "5432",
-            "dialect": "postgres"
-        },
         "facebook": {
             "clientID": "change this",
             "clientSecret": "change this"
@@ -86,21 +78,6 @@
             "useridField": "change this e.g. uid",
             "tlsOptions": {
                 "changeme": "See https://nodejs.org/api/tls.html#tls_tls_connect_options_callback"
-            }
-        },
-        "saml": {
-            "idpSsoUrl": "change: authentication endpoint of IdP",
-            "idpCert": "change: certificate file path of IdP in PEM format",
-            "issuer": "change or delete: identity of the service provider (default: serverurl)",
-            "identifierFormat": "change or delete: name identifier format (default: 'urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress')",
-            "disableRequestedAuthnContext": "change or delete: true to allow any authentication method, false restricts to password authentication method (default: false)",
-            "groupAttribute": "change or delete: attribute name for group list (ex: memberOf)",
-            "requiredGroups": [ "change or delete: group names that allowed" ],
-            "externalGroups": [ "change or delete: group names that not allowed" ],
-            "attribute": {
-               "id": "change or delete this: attribute map for `id` (default: NameID)",
-               "username": "change or delete this: attribute map for `username` (default: NameID)",
-               "email": "change or delete this: attribute map for `email` (default: NameID)"
             }
         },
         "imgur": {
