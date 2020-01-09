@@ -18,9 +18,5 @@ backups/
 *.log
 *.sqlite
 
-# ignore webpack build
-public/build
-public/views/build
-
 public/uploads/*
 !public/uploads/.gitkeep
