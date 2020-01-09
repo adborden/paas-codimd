@@ -2,10 +2,11 @@
 applications:
 - name: hackmd
   instances: 1
-  memory: 6G
+  memory: 1G
   command: npm build && npm start
   buildpack: nodejs_buildpack
   env:
+    CF_DB: codimd-db
+    CMD_PORT: 8080
     PGSSLMODE: require
     UV_THREADPOOL_SIZE: 100
-    CMD_PORT: 8080
